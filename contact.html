@@ -19,6 +19,29 @@
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"AccountingService","name":"BOSS Associates LLC","email":"malika@bossassociate.com","telephone":"(303) 931-5098","url":"https://www.bossassociate.com/contact.html","address":{"@type":"PostalAddress","addressLocality":"Atlanta","addressRegion":"GA","addressCountry":"US"}}</script>
+
+  <style>
+    /* Contact page layout fix */
+    .contact-grid {
+      align-items: start !important;
+    }
+    .contact-grid > div {
+      align-self: start !important;
+      height: auto !important;
+      min-height: 0 !important;
+    }
+    .contact-grid .card {
+      height: auto !important;
+      min-height: 0 !important;
+    }
+    .contact-grid + * {
+      clear: both;
+    }
+    .faq {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
