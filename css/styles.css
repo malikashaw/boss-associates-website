@@ -473,3 +473,13 @@ main:focus { outline: none; }
     overflow-y: auto; padding-bottom: 24px;
   }
 }
+
+/* Contact page layout correction: prevent the consultation card from stretching
+   to the full height of the neighboring form column and overlapping the FAQ. */
+.contact-grid { align-items: start; }
+.contact-grid > * { min-width: 0; }
+.contact-grid .card { height: auto; }
+
+/* Keep FAQ controls aligned neatly at the right edge. */
+.faq__q { padding-right: 4px; }
+.faq__q .plus { margin-left: auto; }
