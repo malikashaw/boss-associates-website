@@ -483,3 +483,433 @@ main:focus { outline: none; }
 /* Keep FAQ controls aligned neatly at the right edge. */
 .faq__q { padding-right: 4px; }
 .faq__q .plus { margin-left: auto; }
+
+
+/* ==========================================================
+   BOSS Associates Website V2 refinements
+   ========================================================== */
+:root {
+  --header-h: 82px;
+  --radius: 18px;
+  --shadow-sm: 0 10px 28px rgba(11,37,69,.07);
+  --shadow-md: 0 18px 48px rgba(11,37,69,.12);
+}
+
+/* Primary logo */
+.brand { min-width: 220px; padding: 4px 0; }
+.brand__logo { display:block; width: 220px; height: 62px; object-fit: contain; object-position: left center; }
+.brand__mark, .brand__name { display:none; }
+.site-header { background: rgba(255,255,255,.97); backdrop-filter: blur(14px); }
+.site-header.scrolled { box-shadow: 0 10px 35px rgba(11,37,69,.09); }
+.nav { gap: 20px; }
+.nav__links { gap: 2px; }
+.nav__cta { gap: 10px; }
+.nav__cta .btn { white-space: nowrap; }
+
+/* Footer logo */
+.site-footer .fbrand { display:block; margin-bottom:18px; }
+.footer-logo { display:block; width: 205px; max-height: 118px; object-fit:contain; object-position:left center; background:#fff; border-radius:14px; padding:8px 12px; }
+
+/* More polished rhythm and cards */
+.section { padding-top: 88px; padding-bottom: 88px; }
+.card, .info-card, .verify-shell { box-shadow: var(--shadow-sm); }
+.card { overflow:hidden; }
+.card::after { content:""; position:absolute; left:0; right:0; bottom:0; height:3px; background:linear-gradient(90deg,var(--gold),var(--gold-lite)); transform:scaleX(0); transform-origin:left; transition:transform .3s var(--ease); }
+.card:hover::after { transform:scaleX(1); }
+.btn { box-shadow: 0 8px 18px rgba(11,37,69,.08); }
+.btn:hover { box-shadow: 0 12px 28px rgba(11,37,69,.14); }
+
+/* Contact page: natural content height and clean FAQ spacing */
+.contact-section { padding-bottom: 50px; }
+.contact-grid { align-items:start; gap:48px; }
+.contact-grid > div { align-self:start; min-width:0; }
+.contact-grid .card { height:auto; min-height:0; }
+.contact-grid form { margin-top:24px; }
+.contact-grid .field:last-of-type { margin-bottom: 24px; }
+.faq-section { padding-top: 48px; }
+.faq-section .center { margin-bottom: 34px !important; }
+.faq__q { padding:22px 4px; gap:18px; }
+.faq__q .plus { margin-left:auto; }
+
+/* Mobile refinements */
+@media (max-width: 1120px) {
+  .nav__cta .btn--ghost { display:none; }
+  .brand { min-width:190px; }
+  .brand__logo { width:190px; height:56px; }
+}
+@media (max-width: 940px) {
+  :root { --header-h: 74px; }
+  .brand { min-width:0; }
+  .brand__logo { width:176px; height:52px; }
+  .nav__cta { display:none; }
+  .menu-btn { display:grid; }
+  .nav__links { top:var(--header-h); }
+  .section { padding-top:68px; padding-bottom:68px; }
+}
+@media (max-width: 560px) {
+  .brand__logo { width:150px; height:48px; }
+  .hero__cta .btn, .cta__actions .btn { width:100%; justify-content:center; }
+  .section { padding-top:58px; padding-bottom:58px; }
+  .pagehero { padding-top:96px; }
+  .footer-logo { width:190px; }
+}
+
+/* Founder profile card */
+.founder-card { padding: 0; background: #fff; }
+.founder-card::before { display: none; }
+.founder-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 24%;
+  border-bottom: 1px solid var(--border);
+}
+.founder-card__content { padding: 32px 36px 36px; }
+.founder-card__content h3 { font-size: 1.8rem; margin: 8px 0 4px; }
+.founder-title { color: var(--gold-deep); font-weight: 700; margin-bottom: 14px; }
+.founder-card__content > p:not(.founder-title) { color: var(--muted); }
+@media (max-width: 600px) {
+  .founder-card__content { padding: 26px 24px 30px; }
+}
+
+/* V2.1 logo and spacing corrections */
+.brand { min-width: 190px; }
+.brand__logo {
+  width: 190px;
+  height: 58px;
+  object-fit: contain;
+  object-position: left center;
+  filter: drop-shadow(0 2px 2px rgba(11,37,69,.10));
+}
+.hero__card .seal--brand {
+  width: min(100%, 290px);
+  height: auto;
+  margin: 0 auto 24px;
+}
+.hero__card .seal--brand img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 8px 12px rgba(0,0,0,.28));
+}
+.footer-logo {
+  width: 230px;
+  max-height: 105px;
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  filter: drop-shadow(0 4px 5px rgba(0,0,0,.28));
+}
+.pagehero { padding: 64px 0 56px; }
+.section { padding-top: 68px; padding-bottom: 68px; }
+.about-intro .split { align-items: start; }
+
+@media (max-width: 1120px) {
+  .brand { min-width: 170px; }
+  .brand__logo { width: 170px; height: 54px; }
+}
+@media (max-width: 940px) {
+  .brand__logo { width: 160px; height: 50px; }
+  .pagehero { padding: 50px 0 44px; }
+  .section { padding-top: 56px; padding-bottom: 56px; }
+}
+@media (max-width: 560px) {
+  .brand__logo { width: 135px; height: 44px; }
+  .pagehero { padding: 42px 0 38px; }
+  .section { padding-top: 48px; padding-bottom: 48px; }
+  .footer-logo { width: 205px; }
+}
+
+
+/* Final BOSS logo and favicon update */
+.brand__logo {
+  width: 190px;
+  height: 64px;
+  object-fit: contain;
+  object-position: left center;
+  filter: drop-shadow(0 2px 3px rgba(7,26,51,.18));
+}
+.hero__card .seal--brand {
+  width: 100%;
+  height: 190px;
+  margin: -8px auto 12px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: var(--navy-800);
+}
+.hero__card .seal--brand img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 48%;
+}
+.footer-logo {
+  width: 225px;
+  max-height: 125px;
+  object-fit: contain;
+  object-position: left center;
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  filter: drop-shadow(0 3px 5px rgba(0,0,0,.28));
+}
+@media (max-width: 940px) { .brand__logo { width: 165px; height: 56px; } }
+@media (max-width: 640px) { .brand__logo { width: 145px; height: 50px; } .hero__card .seal--brand { height: 150px; } }
+
+/* V2.3 — header logo clarity, seamless home logo, and tighter top spacing */
+:root { --header-h: 82px; }
+.site-header,
+.site-header.scrolled {
+  background: rgba(7,26,51,.98);
+  border-bottom-color: rgba(255,255,255,.12);
+}
+.site-header.scrolled { box-shadow: 0 6px 22px rgba(0,0,0,.18); }
+.nav { height: var(--header-h); }
+.brand { min-width: 205px; }
+.brand__logo {
+  width: 205px;
+  height: 72px;
+  object-fit: contain;
+  object-position: left center;
+  filter: drop-shadow(0 3px 5px rgba(0,0,0,.32));
+}
+.nav__links a,
+.nav__drop { color: #fff; }
+.nav__links a:hover,
+.nav__links a[aria-current="page"],
+.nav__drop:hover { color: var(--gold-lite); }
+.nav__links a::after { background: var(--gold-lite); }
+.nav__drop svg { color: var(--gold-lite); }
+.site-header .btn--ghost {
+  color: #fff;
+  background: transparent;
+  border-color: rgba(255,255,255,.52);
+}
+.site-header .btn--ghost:hover {
+  color: var(--gold-lite);
+  border-color: var(--gold-lite);
+  background: rgba(255,255,255,.05);
+}
+.hero__inner { padding-top: 48px; padding-bottom: 72px; }
+.pagehero { padding: 38px 0 44px; }
+.hero__card .seal--brand {
+  width: min(100%, 310px);
+  height: auto;
+  min-height: 0;
+  margin: -4px auto 20px;
+  overflow: visible;
+  border-radius: 0;
+  background: transparent;
+}
+.hero__card .seal--brand img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 12px rgba(0,0,0,.32));
+}
+@media (max-width: 1120px) {
+  .brand { min-width: 180px; }
+  .brand__logo { width: 180px; height: 66px; }
+}
+@media (max-width: 940px) {
+  :root { --header-h: 74px; }
+  .brand { min-width: 160px; }
+  .brand__logo { width: 160px; height: 60px; }
+  .menu-btn { background: transparent; border-color: rgba(255,255,255,.35); }
+  .menu-btn span, .menu-btn span::before, .menu-btn span::after { background: #fff; }
+  body.menu-open .menu-btn span { background: transparent; }
+  .nav__links {
+    background: var(--navy-900);
+    border-bottom-color: rgba(255,255,255,.12);
+  }
+  .nav__links a,
+  .nav__drop { color:#fff; }
+  .nav__links a:hover,
+  .nav__links a[aria-current="page"] { background: rgba(255,255,255,.08); color:var(--gold-lite); }
+  .hero__inner { padding-top: 40px; padding-bottom: 58px; }
+  .pagehero { padding: 32px 0 38px; }
+}
+@media (max-width: 560px) {
+  .brand { min-width: 138px; }
+  .brand__logo { width: 138px; height: 54px; }
+  .hero__inner { padding-top: 32px; }
+  .pagehero { padding: 26px 0 32px; }
+}
+
+
+/* V2.4 — navigation readability, spacing, training alignment, and home logo sizing */
+/* Keep the Services control readable on the navy header, including active pages. */
+.site-header .nav__drop,
+.site-header .has-dropdown.open-active .nav__drop,
+.site-header .has-dropdown.open .nav__drop {
+  color: #fff;
+}
+.site-header .nav__drop:hover,
+.site-header .has-dropdown.open-active .nav__drop:hover {
+  color: var(--gold-lite);
+}
+
+/* Dropdown itself is white, so its text must stay dark. */
+.site-header .dropdown a,
+.site-header .nav__links .dropdown a {
+  color: var(--navy-700);
+  background: transparent;
+}
+.site-header .dropdown a b,
+.site-header .nav__links .dropdown a b {
+  color: var(--navy-800);
+}
+.site-header .dropdown a small,
+.site-header .nav__links .dropdown a small {
+  color: var(--muted);
+}
+.site-header .dropdown a:hover,
+.site-header .nav__links .dropdown a:hover {
+  color: var(--navy-900);
+  background: var(--gray-50);
+}
+
+/* Reduce the empty space between Financial Education and Client Voices. */
+.services-detail-section { padding-bottom: 34px; }
+.client-voices-section { padding-top: 34px; }
+
+/* Line up each audience label and its description in consistent columns. */
+.audience-list li {
+  display: grid;
+  grid-template-columns: 24px 165px minmax(0, 1fr);
+  column-gap: 14px;
+  align-items: start;
+}
+.audience-list .tick { margin-top: 3px; }
+.audience-list .audience-title {
+  font-weight: 700;
+  color: var(--navy-800);
+}
+.audience-list .audience-desc { min-width: 0; }
+
+/* Tighten the transition from the audience/certificate area into the FAQ. */
+.audience-section { padding-bottom: 38px; }
+.training-faq-section { padding-top: 38px; }
+
+/* Make the logo inside the home-page feature card less dominant. */
+.hero__card .seal--brand { width: min(100%, 255px); }
+
+@media (max-width: 700px) {
+  .audience-list li {
+    grid-template-columns: 24px minmax(0, 1fr);
+    row-gap: 2px;
+  }
+  .audience-list .audience-title,
+  .audience-list .audience-desc { grid-column: 2; }
+  .audience-list .tick { grid-row: 1 / span 2; }
+  .services-detail-section { padding-bottom: 26px; }
+  .client-voices-section { padding-top: 26px; }
+  .audience-section { padding-bottom: 28px; }
+  .training-faq-section { padding-top: 28px; }
+  .hero__card .seal--brand { width: min(100%, 225px); }
+}
+
+/* V2.5 — corrected FAQ-to-CTA spacing and bookkeeping-training alignment */
+/* FAQ sections should flow directly into their call-to-action instead of
+   creating the appearance of a large blank section. */
+.faq-content-section {
+  padding-bottom: 28px;
+}
+.faq-content-section + .cta-section {
+  padding-top: 28px;
+}
+
+/* Bookkeeping Training: fixed three-column row structure. */
+.audience-section .audience-list {
+  margin-top: 18px;
+}
+.audience-section .audience-list li {
+  display: grid;
+  grid-template-columns: 24px 170px minmax(0, 1fr);
+  column-gap: 14px;
+  align-items: start;
+  padding: 10px 0;
+}
+.audience-section .audience-list .tick {
+  grid-column: 1;
+  width: 24px;
+  height: 24px;
+  margin-top: 2px;
+}
+.audience-section .audience-list .audience-title {
+  grid-column: 2;
+  display: block;
+  font-weight: 700;
+  color: var(--navy-800);
+  line-height: 1.55;
+}
+.audience-section .audience-list .audience-desc {
+  grid-column: 3;
+  display: block;
+  min-width: 0;
+  line-height: 1.55;
+  color: var(--ink);
+}
+
+@media (max-width: 1100px) and (min-width: 901px) {
+  .audience-section .audience-list li {
+    grid-template-columns: 24px 150px minmax(0, 1fr);
+    column-gap: 12px;
+  }
+}
+
+@media (max-width: 700px) {
+  .faq-content-section { padding-bottom: 20px; }
+  .faq-content-section + .cta-section { padding-top: 20px; }
+  .audience-section .audience-list li {
+    grid-template-columns: 24px minmax(0, 1fr);
+    row-gap: 2px;
+  }
+  .audience-section .audience-list .tick {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+  .audience-section .audience-list .audience-title,
+  .audience-section .audience-list .audience-desc {
+    grid-column: 2;
+  }
+}
+
+/* V2.6 — smooth blue backgrounds and home hero alignment */
+.hero__grid,
+.pagehero__grid {
+  display: none;
+  background-image: none;
+}
+
+@media (min-width: 901px) {
+  .hero__card {
+    align-self: start;
+    margin-top: -18px;
+  }
+
+  .hero__trust {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 28px;
+    row-gap: 0;
+  }
+
+  .hero__trust .stat {
+    min-width: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero__card { margin-top: 0; }
+  .hero__trust {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px 30px;
+  }
+}
+
+@media (max-width: 560px) {
+  .hero__trust { grid-template-columns: 1fr; }
+}

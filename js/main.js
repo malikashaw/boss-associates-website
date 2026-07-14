@@ -1,4 +1,4 @@
-/* BOSS Associates — interactions */
+/* BOSS Associates interactions */
 (function () {
   "use strict";
 
@@ -64,13 +64,17 @@
   if (form) {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
       var data = new FormData(form);
       var name = (data.get("name") || "").toString().trim();
       var email = (data.get("email") || "").toString().trim();
       var service = (data.get("service") || "").toString().trim();
       var message = (data.get("message") || "").toString().trim();
       var to = form.getAttribute("data-to") || "malika@bossassociate.com";
-      var subject = "Website inquiry" + (service ? " — " + service : "");
+      var subject = "Website inquiry" + (service ? ": " + service : "");
       var body =
         "Name: " + name + "\n" +
         "Email: " + email + "\n" +
@@ -82,7 +86,7 @@
         "&body=" + encodeURIComponent(body);
       var status = document.getElementById("formStatus");
       if (status) {
-        status.textContent = "Opening your email app to send this message…";
+        status.textContent = "Opening your email app to send this message...";
         status.style.color = "var(--gold-deep)";
       }
     });

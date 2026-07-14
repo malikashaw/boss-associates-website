@@ -152,7 +152,7 @@ function footer() {
             <li>${I.pin}<span>${SITE.city}</span></li>
             <li>${I.phone}<a href="tel:${SITE.phoneHref}">${SITE.phoneDisplay}</a></li>
             <li>${I.mail}<a href="mailto:${SITE.email}">${SITE.email}</a></li>
-            <li>${I.clock}<span>Mon–Fri · 9:00am–5:00pm ET</span></li>
+            <li>${I.clock}<span>Mon-Fri · 9:00am-5:00pm ET</span></li>
           </ul>
         </div>
       </div>
@@ -181,7 +181,6 @@ const callBtn = `<a class="btn btn--ghost" href="tel:${SITE.phoneHref}">${I.phon
 function pagehero(crumb, title, sub) {
   return `
   <section class="pagehero">
-    <div class="pagehero__grid"></div>
     <div class="wrap">
       <div class="crumbs reveal"><a href="index.html">Home</a> / <span>${crumb}</span></div>
       <h1 class="reveal d1">${title}</h1>
@@ -301,13 +300,12 @@ page({
   },
   body: `
   <section class="hero">
-    <div class="hero__grid"></div>
     <div class="wrap">
       <div class="hero__inner">
         <div>
           <span class="eyebrow hero__eyebrow reveal">Atlanta, Georgia · Accounting &amp; Financial Education</span>
           <h1 class="reveal d1">Your numbers, handled with <em>precision</em> and care.</h1>
-          <p class="hero__sub reveal d2">BOSS Associates LLC helps small business owners keep clean books, file confident taxes, and finally understand the story their finances are telling &mdash; plus training to master bookkeeping yourself.</p>
+          <p class="hero__sub reveal d2">BOSS Associates LLC helps small business owners keep clean books, file confident taxes, and finally understand the story their finances are telling , plus training to master bookkeeping yourself.</p>
           <div class="hero__cta reveal d3">
             ${consult}
             <a class="btn btn--outline" href="services.html">Explore Services ${I.arrow}</a>
@@ -350,7 +348,7 @@ page({
       <div class="split">
         <div class="reveal">
           <span class="eyebrow">The BOSS Difference</span>
-          <h2 class="h2">Accounting that treats your business like it matters &mdash; because it does.</h2>
+          <h2 class="h2">Accounting that treats your business like it matters , because it does.</h2>
           <p class="lead">We built BOSS Associates on a simple belief: every owner deserves financials they can trust and understand. You get a real professional who knows your books, answers your calls, and helps you make decisions with confidence.</p>
           <div class="hero__cta" style="margin-top:1.5rem">
             <a class="btn btn--gold" href="about.html">Meet BOSS Associates ${I.arrow}</a>
@@ -382,7 +380,7 @@ page({
         </div>
         <div class="reveal d2">
           <span class="eyebrow">Financial Education</span>
-          <h2 class="h2">Don't just outsource your finances &mdash; understand them.</h2>
+          <h2 class="h2">Don't just outsource your finances , understand them.</h2>
           <p class="lead">Most owners were never taught how their books actually work. Our training changes that. Whether you want to keep your own books or simply speak the language, you'll leave knowing exactly what your numbers mean.</p>
           <div class="statband" style="margin-top:2rem;text-align:left">
             <div class="stat"><b style="color:var(--gold-deep)">3 hrs</b><span style="color:var(--muted)">Focused, practical training</span></div>
@@ -399,7 +397,7 @@ page({
     ["Where is BOSS Associates located, and do you work remotely?", "We're based in Atlanta, Georgia, and serve clients both locally and nationwide. Most bookkeeping, accounting, and tax work is handled securely online, with calls and video meetings whenever you'd like to talk things through."],
     ["What size businesses do you work with?", "We specialize in small businesses, solo entrepreneurs, freelancers, and contractors. If you're just getting organized or you've outgrown doing it yourself, we can meet you where you are."],
     ["Do I have to choose between hiring you and learning it myself?", "Not at all. Many clients hire us for their books and taxes while also taking our training so they understand what's happening. You can do one, the other, or both."],
-    ["How do I get started?", "Book a consultation and we'll talk through your situation, what you need, and how we can help. There's no obligation &mdash; just a clear next step."],
+    ["How do I get started?", "Book a consultation and we'll talk through your situation, what you need, and how we can help. There's no obligation , just a clear next step."],
   ])}
 
   ${ctaBand("Ready for financials you can finally trust?", "Let's talk about your books, your taxes, and your goals. Book a free consultation and see how much lighter running your business can feel.")}
@@ -423,7 +421,7 @@ page({
         <div class="reveal">
           <span class="eyebrow">Our Story</span>
           <h2 class="h2">A firm built for owners who want to actually understand their business.</h2>
-          <p>BOSS Associates LLC was founded to close a frustrating gap. Too many small business owners hand off their finances and never really know what's happening &mdash; until something goes wrong. We do things differently.</p>
+          <p>BOSS Associates LLC was founded to close a frustrating gap. Too many small business owners hand off their finances and never really know what's happening , until something goes wrong. We do things differently.</p>
           <p>Our founder, Malika, brings formal accounting education and hands-on CPA-firm experience across bookkeeping, payroll, reconciliations, and tax preparation. That background shapes everything here: work that's technically sound, carefully reviewed, and explained in language that makes sense.</p>
           <p>Today we combine full-service accounting with financial education, because the best outcomes happen when a business owner and their accountant are truly on the same page.</p>
         </div>
@@ -449,7 +447,7 @@ page({
         <h2 class="h2">Values we won't compromise on</h2>
       </div>
       <div class="grid grid-3">
-        <div class="card reveal d1"><div class="card__icon">${I.shield}</div><h3>Integrity</h3><p>Truthful, defensible, and done right &mdash; even when no one's checking. Your trust is the whole business.</p></div>
+        <div class="card reveal d1"><div class="card__icon">${I.shield}</div><h3>Integrity</h3><p>Truthful, defensible, and done right , even when no one's checking. Your trust is the whole business.</p></div>
         <div class="card reveal d2"><div class="card__icon">${I.accounting}</div><h3>Precision</h3><p>Reconciled, reviewed, and consistent. Details matter in accounting, and we sweat them so you don't have to.</p></div>
         <div class="card reveal d3"><div class="card__icon">${I.education}</div><h3>Empowerment</h3><p>We explain, teach, and share the &ldquo;why.&rdquo; You should never feel in the dark about your own money.</p></div>
       </div>
@@ -468,7 +466,7 @@ page({
   </section>
 
   ${faqSection([
-    ["Who will I actually work with?", "You'll work directly with your accountant at BOSS Associates &mdash; not a rotating call center. That continuity is how we keep your books accurate and your questions answered quickly."],
+    ["Who will I actually work with?", "You'll work directly with your accountant at BOSS Associates , not a rotating call center. That continuity is how we keep your books accurate and your questions answered quickly."],
     ["Are you accepting new clients?", "Yes. We take on a limited number of clients at a time to protect the quality of our work, so reaching out early is the best way to secure a spot."],
     ["Can you work with my existing software?", "In most cases, yes. We work with common small-business accounting platforms and can advise on the right setup if you're starting fresh."],
   ], "About working with us")}
@@ -516,7 +514,7 @@ page({
       <div id="payroll" style="scroll-margin-top:100px">
         <span class="eyebrow reveal">Payroll Services</span>
         <h2 class="h2 reveal d1">Pay your team correctly, on time, every time.</h2>
-        <p class="reveal d2">Payroll is where small errors turn into big headaches. We help you run payroll smoothly and stay on top of the filings and deadlines that come with it &mdash; so your people are paid right and your records stay clean.</p>
+        <p class="reveal d2">Payroll is where small errors turn into big headaches. We help you run payroll smoothly and stay on top of the filings and deadlines that come with it , so your people are paid right and your records stay clean.</p>
         <ul class="checklist reveal d2">
           <li><span class="tick">${I.check}</span> Regular payroll processing and pay-run support</li>
           <li><span class="tick">${I.check}</span> Wage, withholding, and filing organization</li>
@@ -527,7 +525,7 @@ page({
       <div id="consulting" style="scroll-margin-top:100px">
         <span class="eyebrow reveal">Business Consulting</span>
         <h2 class="h2 reveal d1">A financial partner in your corner.</h2>
-        <p class="reveal d2">Numbers only help if they inform decisions. We sit down with you to make sense of cash flow, pricing, budgeting, and the systems running your business &mdash; then turn that into a clear, practical plan.</p>
+        <p class="reveal d2">Numbers only help if they inform decisions. We sit down with you to make sense of cash flow, pricing, budgeting, and the systems running your business , then turn that into a clear, practical plan.</p>
         <ul class="checklist reveal d2">
           <li><span class="tick">${I.check}</span> Cash-flow and budgeting guidance</li>
           <li><span class="tick">${I.check}</span> Systems, workflow, and record-keeping setup</li>
@@ -538,7 +536,7 @@ page({
       <div id="education" style="scroll-margin-top:100px">
         <span class="eyebrow reveal">Financial Education</span>
         <h2 class="h2 reveal d1">Confidence comes from understanding.</h2>
-        <p class="reveal d2">We're an accounting firm that also teaches. Through workshops, coaching, and our bookkeeping training, we help owners and teams understand the fundamentals &mdash; so financial decisions feel a lot less intimidating.</p>
+        <p class="reveal d2">We're an accounting firm that also teaches. Through workshops, coaching, and our bookkeeping training, we help owners and teams understand the fundamentals , so financial decisions feel a lot less intimidating.</p>
         <ul class="checklist reveal d2">
           <li><span class="tick">${I.check}</span> Practical workshops and one-on-one coaching</li>
           <li><span class="tick">${I.check}</span> Approved workforce-development curriculum</li>
@@ -625,7 +623,7 @@ servicePage({
   lead: "Accurate returns, filed on time, prepared by someone who actually understands your business and your goals.",
   title: "File with confidence, keep more of what you earn.",
   intro: [
-    "Tax season shouldn't feel like a scramble. We prepare individual and small-business returns with the same accuracy and review a CPA firm demands &mdash; and we do it while there's still time to plan, not just report.",
+    "Tax season shouldn't feel like a scramble. We prepare individual and small-business returns with the same accuracy and review a CPA firm demands , and we do it while there's still time to plan, not just report.",
     "Because we also handle bookkeeping and accounting, your numbers arrive at tax time already clean and organized. That means fewer surprises, fewer missed deductions, and a return you can stand behind.",
   ],
   includesHeading: "What's included",
@@ -633,22 +631,22 @@ servicePage({
     "Individual (1040) and small-business return preparation",
     "Review of income, expenses, and deductions",
     "Organized, accurate, on-time filing",
-    "Year-round questions answered &mdash; not just in April",
+    "Year-round questions answered , not just in April",
     "Guidance to plan ahead for next year",
   ],
   steps: [
-    ["Gather", "We give you a simple checklist and collect your documents securely &mdash; no guesswork about what you need."],
+    ["Gather", "We give you a simple checklist and collect your documents securely , no guesswork about what you need."],
     ["Prepare", "We prepare your return carefully, reviewing for accuracy and looking for every deduction you're entitled to."],
     ["Review together", "We walk you through the return in plain English so you understand it before anything is filed."],
     ["File &amp; plan", "We file on time and talk through simple steps to make next year even smoother."],
   ],
   forWho: {
     h: "Ideal for owners, freelancers, and contractors who want it done right.",
-    p: "If your finances have gotten more complex, or you're tired of rushing every spring, we bring order and confidence to your filing &mdash; and keep the conversation going all year.",
+    p: "If your finances have gotten more complex, or you're tired of rushing every spring, we bring order and confidence to your filing , and keep the conversation going all year.",
   },
   faq: [
     ["Do you handle both personal and business taxes?", "Yes. We prepare individual returns as well as returns for small businesses, sole proprietors, freelancers, and contractors, and we can coordinate the two so nothing falls through the cracks."],
-    ["What if my books are a mess?", "That's common &mdash; and fixable. We can clean up and reconcile your books first so your return is built on accurate numbers. Ask us about bundling bookkeeping with tax prep."],
+    ["What if my books are a mess?", "That's common , and fixable. We can clean up and reconcile your books first so your return is built on accurate numbers. Ask us about bundling bookkeeping with tax prep."],
     ["When should I reach out?", "The earlier the better. Getting organized before deadline season means more time to plan, fewer surprises, and a smoother filing. That said, we're glad to help even if you're already behind."],
     ["Can you help me pay less next year?", "We can identify practical, above-board steps to plan ahead. Real tax savings usually come from good decisions made throughout the year, not from anything done at the last minute."],
   ],
@@ -664,7 +662,7 @@ servicePage({
   lead: "Accurate statements, careful reconciliations, and reporting you can actually use to make decisions.",
   title: "A clear financial picture, every single month.",
   intro: [
-    "Good accounting is more than data entry &mdash; it's turning your activity into a reliable, reviewed picture of how your business is really doing. That's what we deliver.",
+    "Good accounting is more than data entry , it's turning your activity into a reliable, reviewed picture of how your business is really doing. That's what we deliver.",
     "We handle reconciliations, month-end close, and financial statements with CPA-firm discipline, then translate the results into insights you can act on. No mystery numbers, no April surprises.",
   ],
   includesHeading: "What's included",
@@ -678,7 +676,7 @@ servicePage({
   steps: [
     ["Assess", "We review your current setup and records to understand where things stand and what needs cleaning up."],
     ["Reconcile", "We reconcile accounts and close the books so your statements reflect reality, not guesswork."],
-    ["Report", "You receive clear financial statements &mdash; and a plain-English explanation of what they mean."],
+    ["Report", "You receive clear financial statements , and a plain-English explanation of what they mean."],
     ["Advise", "We flag trends and opportunities so your accounting informs real decisions, not just compliance."],
   ],
   forWho: {
@@ -688,7 +686,7 @@ servicePage({
   faq: [
     ["What's the difference between bookkeeping and accounting?", "Bookkeeping records the day-to-day transactions; accounting turns those records into reconciled statements and insight. Many clients need both, and we handle them together so nothing is duplicated or missed."],
     ["Can you get my books caught up first?", "Yes. If you're behind, we can bring your records current and reconciled before setting up an ongoing rhythm, so everything moving forward is accurate."],
-    ["Will I understand the reports?", "That's the point. We don't just hand over statements &mdash; we walk you through them so you know exactly what each number is telling you."],
+    ["Will I understand the reports?", "That's the point. We don't just hand over statements , we walk you through them so you know exactly what each number is telling you."],
   ],
   closing: { h: "Ready for accounting you can trust?", p: "Book a consultation and let's get your financial picture accurate, current, and genuinely useful." },
 });
@@ -699,7 +697,7 @@ servicePage({
   metaTitle: "Bookkeeping Services | Clean, Monthly Books | BOSS Associates LLC",
   metaDesc: "Reliable monthly bookkeeping from BOSS Associates LLC. Clean, categorized, reconciled books that keep your small business organized and ready for tax time.",
   hero: "Clean books, kept current, every month.",
-  lead: "Categorized, reconciled, and up to date &mdash; so you always know where your money is going.",
+  lead: "Categorized, reconciled, and up to date , so you always know where your money is going.",
   title: "Never fall behind on your books again.",
   intro: [
     "Messy or missing books cost you money, time, and peace of mind. Our monthly bookkeeping keeps your records accurate and current, so tax season is simple and your decisions are informed.",
@@ -715,7 +713,7 @@ servicePage({
   ],
   steps: [
     ["Set up", "We connect and organize your accounts and establish a clean, consistent system tailored to your business."],
-    ["Maintain", "Each month we record, categorize, and reconcile &mdash; keeping your books current and accurate."],
+    ["Maintain", "Each month we record, categorize, and reconcile , keeping your books current and accurate."],
     ["Reconcile", "We make sure your books match reality, catching discrepancies before they become problems."],
     ["Report", "You get clear monthly summaries, so you're never guessing about your cash or your position."],
   ],
@@ -725,8 +723,8 @@ servicePage({
   },
   faq: [
     ["How often will my books be updated?", "Most clients are on a monthly cadence, with reconciliations and a summary each period. If your business moves faster, we can talk about a schedule that fits."],
-    ["I'm months behind &mdash; can you help?", "Absolutely. Catch-up bookkeeping is one of the most common things we do. We'll bring your records current and then keep them that way."],
-    ["Do you offer training if I want to learn myself?", "Yes &mdash; that's a big part of what we do. Check out our <a href='bookkeeping-training.html'>Bookkeeping Training</a> to learn the skill, or combine training with done-for-you bookkeeping."],
+    ["I'm months behind , can you help?", "Absolutely. Catch-up bookkeeping is one of the most common things we do. We'll bring your records current and then keep them that way."],
+    ["Do you offer training if I want to learn myself?", "Yes , that's a big part of what we do. Check out our <a href='bookkeeping-training.html'>Bookkeeping Training</a> to learn the skill, or combine training with done-for-you bookkeeping."],
   ],
   closing: { h: "Hand off the books. Reclaim your time.", p: "Book a consultation and let's get your bookkeeping clean, current, and off your mind for good." },
 });
@@ -738,7 +736,7 @@ page({
   file: "bookkeeping-training.html",
   active: "training",
   title: "Bookkeeping Training | Bookkeeping Basics for Small Business Owners | BOSS Associates",
-  desc: "Bookkeeping Basics for Small Business Owners &mdash; a practical 3-hour bookkeeping training course from BOSS Associates LLC. Learn to record, reconcile, and read your own books, with a certificate of completion.",
+  desc: "Bookkeeping Basics for Small Business Owners , a practical 3-hour bookkeeping training course from BOSS Associates LLC. Learn to record, reconcile, and read your own books, with a certificate of completion.",
   jsonld: {
     "@context": "https://schema.org", "@type": "Course",
     "name": "Bookkeeping Basics for Small Business Owners",
@@ -746,7 +744,7 @@ page({
     "provider": { "@type": "Organization", "name": SITE.name, "url": SITE.domain }
   },
   body: `
-  ${pagehero("Bookkeeping Training", "Learn to run your own books with confidence.", "Bookkeeping Basics for Small Business Owners &mdash; a practical, plain-English course taught by an experienced accountant.")}
+  ${pagehero("Bookkeeping Training", "Learn to run your own books with confidence.", "Bookkeeping Basics for Small Business Owners , a practical, plain-English course taught by an experienced accountant.")}
 
   <section class="section">
     <div class="wrap">
@@ -755,7 +753,7 @@ page({
           <span class="tag">Now Enrolling</span>
           <h2 class="h2">Bookkeeping Basics for Small Business Owners</h2>
           <p class="lead">A focused, 3-hour introductory course that takes you from avoiding your books to confidently recording transactions, reconciling accounts, and reading your own financial reports.</p>
-          <p>This isn't a dry lecture. It's the practical foundation every owner should have &mdash; built from real curriculum used for workforce-development training, taught in language anyone can follow.</p>
+          <p>This isn't a dry lecture. It's the practical foundation every owner should have , built from real curriculum used for workforce-development training, taught in language anyone can follow.</p>
           <div class="hero__cta" style="margin-top:1.4rem">
             <a class="btn btn--gold" href="contact.html">Enroll or Ask a Question ${I.arrow}</a>
             <a class="btn btn--ghost" href="certificate-verification.html">${I.verify} Verify a Certificate</a>
@@ -766,7 +764,7 @@ page({
           <h3 style="font-size:1.35rem">Course at a glance</h3>
           <ul class="checklist">
             <li><span class="tick">${I.check}</span> <b>Format:</b>&nbsp; 3-hour introductory course</li>
-            <li><span class="tick">${I.check}</span> <b>Level:</b>&nbsp; Beginner &mdash; no experience needed</li>
+            <li><span class="tick">${I.check}</span> <b>Level:</b>&nbsp; Beginner , no experience needed</li>
             <li><span class="tick">${I.check}</span> <b>Materials:</b>&nbsp; Participant workbook &amp; examples</li>
             <li><span class="tick">${I.check}</span> <b>Outcome:</b>&nbsp; Certificate of completion</li>
             <li><span class="tick">${I.check}</span> <b>Taught by:</b>&nbsp; An experienced accountant</li>
@@ -786,10 +784,10 @@ page({
       <div class="grid grid-3">
         <div class="card reveal d1"><div class="card__icon">${I.bookkeeping}</div><h3>The fundamentals</h3><p>What bookkeeping really is, the core terms, and why clean books protect your business.</p></div>
         <div class="card reveal d2"><div class="card__icon">${I.accounting}</div><h3>Recording transactions</h3><p>How to categorize income and expenses accurately and consistently, without second-guessing.</p></div>
-        <div class="card reveal d3"><div class="card__icon">${I.verify}</div><h3>Reconciling accounts</h3><p>How to make your books match your bank &mdash; and catch errors before they grow.</p></div>
+        <div class="card reveal d3"><div class="card__icon">${I.verify}</div><h3>Reconciling accounts</h3><p>How to make your books match your bank , and catch errors before they grow.</p></div>
         <div class="card reveal d1"><div class="card__icon">${I.consulting}</div><h3>Reading your reports</h3><p>How to read a basic financial report and understand the story your numbers are telling.</p></div>
         <div class="card reveal d2"><div class="card__icon">${I.calendar}</div><h3>Building a routine</h3><p>A simple monthly rhythm that keeps your books current instead of piling up.</p></div>
-        <div class="card reveal d3"><div class="card__icon">${I.education}</div><h3>Confidence to continue</h3><p>The foundation to keep learning &mdash; or to speak your accountant's language fluently.</p></div>
+        <div class="card reveal d3"><div class="card__icon">${I.education}</div><h3>Confidence to continue</h3><p>The foundation to keep learning , or to speak your accountant's language fluently.</p></div>
       </div>
     </div>
   </section>
@@ -820,7 +818,7 @@ page({
   ${faqSection([
     ["Do I need any experience or accounting background?", "None at all. The course is designed for complete beginners and is taught in plain English. If you can run a business, you can follow this course."],
     ["Will I get a certificate?", "Yes. When you complete the course you'll receive a certificate of completion, which can be confirmed online through our <a href='certificate-verification.html'>Certificate Verification</a> page."],
-    ["Is this enough to do my own books?", "For many small businesses, yes &mdash; you'll have the foundation to record, reconcile, and review your books. If your situation is more complex, you'll also know exactly when to bring in help."],
+    ["Is this enough to do my own books?", "For many small businesses, yes , you'll have the foundation to record, reconcile, and review your books. If your situation is more complex, you'll also know exactly when to bring in help."],
     ["Can my team take it together?", "Yes. Reach out about group and team training, and we'll tailor the details to your organization."],
   ], "Course questions")}
 
@@ -893,7 +891,7 @@ page({
       </div>
       <div class="faq reveal d1">
         <details class="faq__item"><summary class="faq__q">How do I verify a certificate?<span class="plus" aria-hidden="true"></span></summary><div class="faq__a"><p>Enter the certificate ID or the details requested by the tool above. It will confirm whether the certificate was issued by BOSS Associates LLC and to whom.</p></div></details>
-        <details class="faq__item"><summary class="faq__q">I'm an employer &mdash; what does verification confirm?<span class="plus" aria-hidden="true"></span></summary><div class="faq__a"><p>A successful result confirms that the named individual completed the corresponding BOSS Associates course and was issued a valid certificate of completion.</p></div></details>
+        <details class="faq__item"><summary class="faq__q">I'm an employer , what does verification confirm?<span class="plus" aria-hidden="true"></span></summary><div class="faq__a"><p>A successful result confirms that the named individual completed the corresponding BOSS Associates course and was issued a valid certificate of completion.</p></div></details>
         <details class="faq__item"><summary class="faq__q">The tool isn't showing a result. What now?<span class="plus" aria-hidden="true"></span></summary><div class="faq__a"><p>Double-check the certificate ID for typos. If it still doesn't verify, please <a href="contact.html">contact us</a> with the name and approximate completion date and we'll look into it.</p></div></details>
       </div>
     </div>
@@ -923,7 +921,7 @@ page({
         <div class="reveal">
           <span class="eyebrow">Send a Message</span>
           <h2 class="h2">Tell us what you need</h2>
-          <p style="color:var(--muted)">Fill out the form and your email app will open with your message ready to send. Prefer to talk? Call or email us directly &mdash; details are on the right.</p>
+          <p style="color:var(--muted)">Fill out the form and your email app will open with your message ready to send. Prefer to talk? Call or email us directly , details are on the right.</p>
           <form id="contactForm" data-to="${SITE.email}" novalidate>
             <div class="field">
               <label for="name">Full name</label>
@@ -936,7 +934,7 @@ page({
             <div class="field">
               <label for="service">What can we help with?</label>
               <select id="service" name="service">
-                <option value="">Select a service…</option>
+                <option value="">Select a service...</option>
                 <option>Accounting</option>
                 <option>Bookkeeping</option>
                 <option>Tax Preparation</option>
@@ -949,10 +947,10 @@ page({
             </div>
             <div class="field">
               <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Tell us a little about your business and how we can help…"></textarea>
+              <textarea id="message" name="message" placeholder="Tell us a little about your business and how we can help..."></textarea>
             </div>
             <button class="btn btn--gold" type="submit">Send Message ${I.arrow}</button>
-            <p class="form-note" id="formStatus" style="margin-top:14px">This form opens your email app &mdash; no data is stored on this site.</p>
+            <p class="form-note" id="formStatus" style="margin-top:14px">This form opens your email app , no data is stored on this site.</p>
           </form>
         </div>
 
@@ -963,12 +961,12 @@ page({
             <div class="info-row"><div class="ic">${I.phone}</div><div><b>Phone</b><a href="tel:${SITE.phoneHref}">${SITE.phoneDisplay}</a></div></div>
             <div class="info-row"><div class="ic">${I.mail}</div><div><b>Email</b><a href="mailto:${SITE.email}">${SITE.email}</a></div></div>
             <div class="info-row"><div class="ic">${I.pin}</div><div><b>Location</b><span>${SITE.city}<br>Serving clients nationwide</span></div></div>
-            <div class="info-row"><div class="ic">${I.clock}</div><div><b>Hours</b><span>Monday–Friday · 9:00am–5:00pm ET</span></div></div>
+            <div class="info-row"><div class="ic">${I.clock}</div><div><b>Hours</b><span>Monday-Friday · 9:00am-5:00pm ET</span></div></div>
           </div>
           <div class="card" style="margin-top:22px">
             <div class="card__icon">${I.calendar}</div>
             <h3>Book a consultation</h3>
-            <p>Ready to get started? A short conversation is the fastest way to see how we can help &mdash; no obligation.</p>
+            <p>Ready to get started? A short conversation is the fastest way to see how we can help , no obligation.</p>
             <a class="btn btn--navy" href="tel:${SITE.phoneHref}">${I.phone} Call to schedule</a>
           </div>
         </div>
@@ -978,7 +976,7 @@ page({
 
   ${faqSection([
     ["How quickly will I hear back?", "We aim to respond to every inquiry within one business day. If your matter is time-sensitive, calling is the fastest way to reach us."],
-    ["Do you offer a free initial consultation?", "Yes. The first conversation is about understanding your needs and whether we're a good fit &mdash; there's no obligation."],
+    ["Do you offer a free initial consultation?", "Yes. The first conversation is about understanding your needs and whether we're a good fit , there's no obligation."],
     ["Do I need to be local to Atlanta?", "No. We're based in Atlanta, Georgia, and work with clients across the country, handling most work securely online."],
   ], "Before you reach out")}
   `,
