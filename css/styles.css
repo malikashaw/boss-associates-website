@@ -369,7 +369,43 @@ details.faq__item summary::-webkit-details-marker { display:none; }
   border: 1px solid var(--border); border-radius: var(--radius); background:#fff; box-shadow: var(--shadow-sm);
   padding: 10px; min-height: 520px;
 }
+.verify-shell--live {
+  padding: 0;
+  overflow: hidden;
+  min-height: 680px;
+  border-color: rgba(198,161,91,.38);
+  box-shadow: 0 18px 46px rgba(11,37,69,.12);
+}
 .verify-shell iframe { width:100%; min-height: 500px; border:0; border-radius: 10px; display:block; }
+.verify-shell--live iframe {
+  min-height: 680px;
+  border-radius: inherit;
+  background:#fff;
+}
+.verify-fallback {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:16px;
+  flex-wrap:wrap;
+  margin-top:18px;
+  text-align:center;
+}
+.verify-fallback p { margin:0; color:var(--muted); font-size:.9rem; }
+.verify-fallback__button {
+  background: var(--navy-800);
+  color: #fff;
+  border-color: var(--navy-800);
+  box-shadow: 0 8px 20px rgba(11,37,69,.18);
+}
+.verify-fallback__button:hover {
+  background: var(--navy-700);
+  color: var(--gold-lite);
+  border-color: var(--gold);
+}
+@media (max-width:700px){
+  .verify-shell--live, .verify-shell--live iframe { min-height: 760px; }
+}
 .verify-placeholder {
   min-height: 480px; border: 2px dashed var(--gold); border-radius: 10px; background: var(--gray-50);
   display:grid; place-items:center; text-align:center; padding: 40px;

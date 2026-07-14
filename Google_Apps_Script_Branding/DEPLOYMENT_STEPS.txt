@@ -1,0 +1,24 @@
+BOSS CERTIFICATE VERIFICATION — BRANDING UPDATE
+
+1. Open your “Boss Certificate Verification” Google Apps Script project.
+2. Click Index.html.
+3. Find the current <style> block near the top.
+4. Replace only that <style>...</style> block with the contents of BRANDED_STYLE_BLOCK.txt.
+5. Do not delete or replace your form fields, JavaScript, or google.script.run code.
+6. Click Save.
+7. Click Deploy > Manage deployments.
+8. Click the pencil/edit icon on the current Web App deployment.
+9. Under Version, choose “New version,” then click Deploy.
+10. Keep the same /exec URL. The website is already connected to it.
+
+IMPORTANT FOR EMBEDDING
+In Code.gs, your doGet() should allow the page to appear inside your website iframe. It should end like this:
+
+function doGet() {
+  return HtmlService.createHtmlOutputFromFile('Index')
+    .setTitle('BOSS Certificate Verification')
+    .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
+}
+
+If your doGet() already contains other settings or template code, keep those and add only:
+.setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL)

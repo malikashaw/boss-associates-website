@@ -1,0 +1,171 @@
+Replace ONLY the existing <style>...</style> block in your Google Apps Script Index.html with the block below. Keep the rest of your form and JavaScript exactly as they are.
+
+<style>
+  :root {
+    --navy: #0b2545;
+    --navy-dark: #071a31;
+    --navy-soft: #17385f;
+    --gold: #c6a15b;
+    --gold-light: #e6c878;
+    --ink: #10233e;
+    --muted: #5f6f84;
+    --line: #dfe5ec;
+    --paper: #ffffff;
+    --wash: #f6f8fb;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body { min-height: 100%; }
+
+  body {
+    margin: 0;
+    padding: 28px 18px 34px;
+    background: #ffffff;
+    color: var(--ink);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .verification-card,
+  .card,
+  main > div:first-child {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 38px;
+    background: var(--paper);
+    border: 1px solid rgba(198,161,91,.45);
+    border-top: 5px solid var(--gold);
+    border-radius: 18px;
+    box-shadow: 0 18px 42px rgba(11,37,69,.12);
+  }
+
+  .company-name,
+  h1 {
+    margin: 0 0 8px;
+    color: var(--navy);
+    text-align: center;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(28px, 5vw, 40px);
+    line-height: 1.12;
+    letter-spacing: 0;
+  }
+
+  .division,
+  .subtitle,
+  .intro,
+  .description {
+    margin: 0 auto 26px;
+    color: var(--muted);
+    text-align: center;
+    line-height: 1.65;
+    max-width: 580px;
+  }
+
+  h2, h3, legend {
+    color: var(--navy);
+    font-family: Georgia, "Times New Roman", serif;
+  }
+
+  label {
+    display: block;
+    margin: 0 0 8px;
+    color: var(--navy);
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  input, select, textarea {
+    width: 100%;
+    min-height: 50px;
+    margin: 0 0 18px;
+    padding: 13px 15px;
+    border: 1px solid #cfd8e3;
+    border-radius: 10px;
+    background: #fff;
+    color: var(--ink);
+    font: inherit;
+    outline: none;
+    transition: border-color .2s ease, box-shadow .2s ease;
+  }
+
+  input:focus, select:focus, textarea:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 4px rgba(198,161,91,.18);
+  }
+
+  button,
+  input[type="submit"],
+  .button,
+  .btn {
+    min-height: 50px;
+    padding: 13px 24px;
+    border: 1px solid var(--gold);
+    border-radius: 999px;
+    background: linear-gradient(135deg, var(--gold-light), var(--gold));
+    color: var(--navy-dark);
+    font: 700 15px Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(198,161,91,.22);
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
+
+  button:hover,
+  input[type="submit"]:hover,
+  .button:hover,
+  .btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 24px rgba(198,161,91,.3);
+  }
+
+  .result,
+  #result,
+  .verification-result,
+  .success,
+  .error,
+  .message {
+    margin-top: 24px;
+    padding: 18px 20px;
+    border-radius: 12px;
+    line-height: 1.55;
+  }
+
+  .success, .valid, .verified {
+    background: #edf8f1;
+    border: 1px solid #9fd0ad;
+    color: #1d6334;
+  }
+
+  .error, .invalid, .not-found {
+    background: #fff2f2;
+    border: 1px solid #e7adad;
+    color: #8d2929;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 18px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  th, td {
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+  }
+
+  th { background: var(--navy); color: #fff; }
+  tr:last-child td { border-bottom: 0; }
+
+  a { color: #9b762c; }
+
+  @media (max-width: 600px) {
+    body { padding: 12px 8px 24px; }
+    .verification-card, .card, main > div:first-child {
+      padding: 26px 18px;
+      border-radius: 14px;
+    }
+  }
+</style>

@@ -62,55 +62,19 @@
 <h2 class="h2 reveal d1">Confirm a certificate in seconds</h2>
 <p class="lead reveal d2" style="margin-inline:auto">Use the tool below to verify a certificate issued by BOSS Associates LLC. If you're an employer or client, this confirms that the named individual completed the course.</p>
 </div>
-<!-- ===================================================================
-           EMBED SLOT: Paste your Google Apps Script web-app URL below.
-           1) Deploy your Apps Script as a Web App (Execute as: Me,
-              Access: Anyone). Copy the resulting /exec URL.
-           2) Replace YOUR_APPS_SCRIPT_URL_HERE in the iframe src.
-           3) Delete the .verify-placeholder block once the iframe works.
-           =================================================================== -->
-<div class="verify-shell reveal d1">
-<!-- Placeholder (remove once your iframe is live) -->
-<div class="verify-placeholder" id="verifyPlaceholder">
-<div>
-<div class="seal"><svg aria-label="BOSS Associates crest" fill="none" height="120" role="img" viewbox="0 0 120 120" width="120" xmlns="http://www.w3.org/2000/svg">
-<defs>
-<lineargradient id="goldGrad" x1="0" x2="1" y1="0" y2="1">
-<stop offset="0" stop-color="#E6C878"></stop>
-<stop offset="0.5" stop-color="#C6A15B"></stop>
-<stop offset="1" stop-color="#9C7A34"></stop>
-</lineargradient>
-</defs>
-<!-- Seal outer ring -->
-<circle cx="60" cy="60" fill="#0B2545" r="56"></circle>
-<circle cx="60" cy="60" fill="none" r="56" stroke="url(#goldGrad)" stroke-width="2.5"></circle>
-<circle cx="60" cy="60" fill="none" opacity="0.6" r="49" stroke="url(#goldGrad)" stroke-width="1"></circle>
-<!-- Ledger rule lines -->
-<line opacity="0.35" stroke="url(#goldGrad)" stroke-width="0.9" x1="24" x2="96" y1="44" y2="44"></line>
-<line opacity="0.35" stroke="url(#goldGrad)" stroke-width="0.9" x1="24" x2="96" y1="78" y2="78"></line>
-<!-- Monogram BA -->
-<text fill="url(#goldGrad)" font-family="Georgia, 'Times New Roman', serif" font-size="42" font-weight="700" letter-spacing="1" text-anchor="middle" x="60" y="72">BA</text>
-<!-- Microtype -->
-<text fill="#C6A15B" font-family="Georgia, serif" font-size="7.5" letter-spacing="3" text-anchor="middle" x="60" y="94">ASSOCIATES</text>
-<text fill="#C6A15B" font-family="Georgia, serif" font-size="6.5" letter-spacing="2.5" opacity="0.85" text-anchor="middle" x="60" y="34">EST · ATLANTA</text>
-</svg>
+<!-- Live BOSS Certificate Verification Tool -->
+<div class="verify-shell verify-shell--live reveal d1">
+  <iframe
+    src="https://script.google.com/macros/s/AKfycbzf3i9mQZRgXbiu4JRhf9edh1p9Q4dlf0hiTgRadL-b3eW7SAIJPKuYgEZySZf7r_VU/exec"
+    title="BOSS Associates Certificate Verification"
+    loading="eager"
+    referrerpolicy="no-referrer-when-downgrade"
+    allow="clipboard-write">
+  </iframe>
 </div>
-<h3 style="margin-bottom:.4rem">Verification tool goes here</h3>
-<p style="color:var(--muted);max-width:44ch;margin-inline:auto">
-              Embed your existing Google Apps Script verification tool by pasting its web-app URL into the
-              <code>iframe</code> in <code>certificate-verification.html</code>, then remove this placeholder.
-            </p>
-</div>
-</div>
-<!-- Live embed: uncomment and add your URL -->
-<!--
-        <iframe
-          src="YOUR_APPS_SCRIPT_URL_HERE"
-          title="BOSS Associates Certificate Verification"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-        -->
+<div class="verify-fallback reveal d2">
+  <p>Having trouble seeing the verification form?</p>
+  <a class="btn btn--navy verify-fallback__button" href="https://script.google.com/macros/s/AKfycbzf3i9mQZRgXbiu4JRhf9edh1p9Q4dlf0hiTgRadL-b3eW7SAIJPKuYgEZySZf7r_VU/exec" target="_blank" rel="noopener">Open the verification tool</a>
 </div>
 <p class="form-note center reveal d2" style="margin-top:20px">
         Can't find a certificate? <a href="contact.html" style="color:var(--gold-deep);font-weight:600">Contact us</a> and we'll help you confirm it.
