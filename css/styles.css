@@ -949,3 +949,36 @@ main:focus { outline: none; }
 @media (max-width: 560px) {
   .hero__trust { grid-template-columns: 1fr; }
 }
+
+
+/* Homepage expandable "Why owners choose us" details */
+.hero-features { margin-top: 4px; }
+.hero-feature { border-bottom: 1px dashed rgba(255,255,255,.16); }
+.hero-feature:last-child { border-bottom: 0; }
+.hero-feature summary {
+  list-style: none;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 22px minmax(0,1fr) 18px;
+  align-items: start;
+  gap: 12px;
+  padding: 12px 0;
+  color: #CBD6E4;
+  font-size: .98rem;
+  line-height: 1.45;
+}
+.hero-feature summary::-webkit-details-marker { display:none; }
+.hero-feature .tick { width:22px; height:22px; color:var(--gold-lite); }
+.hero-feature__plus { position:relative; width:18px; height:18px; margin-top:2px; }
+.hero-feature__plus::before,
+.hero-feature__plus::after { content:""; position:absolute; background:var(--gold-lite); border-radius:2px; transition:.25s ease; }
+.hero-feature__plus::before { left:0; top:8px; width:18px; height:2px; }
+.hero-feature__plus::after { left:8px; top:0; width:2px; height:18px; }
+.hero-feature[open] .hero-feature__plus::after { transform:rotate(90deg); opacity:0; }
+.hero-feature p { margin: -2px 30px 14px 34px; color:#E6ECF4; font-size:.9rem; line-height:1.58; }
+
+/* About-page value cards */
+.value-card__heading { display:flex; align-items:center; gap:14px; margin-bottom:28px; }
+.value-card__heading .card__icon { margin-bottom:0; flex:none; }
+.value-card__heading h3 { margin:0; }
+.value-card p em { font-style:italic; }
