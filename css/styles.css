@@ -982,3 +982,17 @@ main:focus { outline: none; }
 .value-card__heading .card__icon { margin-bottom:0; flex:none; }
 .value-card__heading h3 { margin:0; }
 .value-card p em { font-style:italic; }
+
+/* About page: make value-card headings visible on white cards */
+.section--navy .value-card__heading h3 {
+  color: var(--navy-800);
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin: 0;
+}
+.value-card__heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 28px;
+}
