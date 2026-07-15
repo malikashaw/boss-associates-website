@@ -466,9 +466,9 @@ page({
   </section>
 
   ${faqSection([
-    ["Who will I actually work with?", "You'll work directly with your accountant at BOSS Associates , not a rotating call center. That continuity is how we keep your books accurate and your questions answered quickly."],
-    ["Are you accepting new clients?", "Yes. We take on a limited number of clients at a time to protect the quality of our work, so reaching out early is the best way to secure a spot."],
-    ["Can you work with my existing software?", "In most cases, yes. We work with common small-business accounting platforms and can advise on the right setup if you're starting fresh."],
+    ["Who will I actually work with?", "You will work directly with your accountant at BOSS Associates, not a rotating call center. That personal continuity is how we keep your books highly accurate and ensure your questions are answered quickly."],
+    ["Are you accepting new clients?", "Yes, we are currently welcoming new monthly bookkeeping, tax, and consulting clients. Because we focus on delivering personalized, 1:1 service, we manage our client roster carefully to ensure everyone receives the attention they deserve."],
+    ["Can you work with my existing software?", "Absolutely. We work with QuickBooks Online, Xero, and other leading accounting platforms. If you already have a system in place, we can typically work within your existing setup. If you're starting from scratch or paying for software that doesn't fit your needs, we'll evaluate your business, transaction volume, and goals to recommend and implement a solution that supports your operations efficiently and cost-effectively."],
   ], "About working with us")}
 
   ${ctaBand("Let's build a financial foundation you can rely on.", "Book a consultation to meet BOSS Associates and see whether we're the right fit for your business.")}
