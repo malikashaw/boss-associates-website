@@ -996,3 +996,41 @@ main:focus { outline: none; }
   gap: 14px;
   margin-bottom: 28px;
 }
+
+/* Homepage financial education course highlights */
+.training-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-top: 2rem;
+}
+.training-stat {
+  display: flex;
+  align-items: baseline;
+  gap: 0.65rem;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.45;
+}
+.training-stat strong {
+  flex: 0 0 auto;
+  min-width: auto;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  line-height: 1;
+  color: var(--gold-deep);
+  white-space: nowrap;
+}
+.training-stat strong::after {
+  content: " –";
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--muted);
+}
+.training-stat span {
+  display: inline;
+}
+@media (max-width: 480px) {
+  .training-stat { font-size: 0.95rem; }
+  .training-stat strong { min-width: 4.25rem; font-size: 1.75rem; }
+}
