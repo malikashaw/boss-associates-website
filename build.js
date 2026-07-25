@@ -9,7 +9,7 @@ const SITE = {
   name: "BOSS Associates LLC",
   short: "BOSS Associates",
   tagline: "Accounting, Tax & Financial Education",
-  phoneDisplay: "(303) 931-5098",
+  phoneDisplay: "(720) 400-1522",
   phoneHref: "+13039315098",
   email: "malika@bossassociate.com",
   city: "Atlanta, Georgia",

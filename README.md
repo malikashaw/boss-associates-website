@@ -26,7 +26,7 @@ Or, if you'd rather not use Node, edit the finished `.html` files directly with 
 
 | What | Current placeholder | Where |
 |---|---|---|
-| Phone (display) | `(303) 931-5098` | all pages, footer |
+| Phone (display) | `(720) 400-1522` | all pages, footer |
 | Phone (link) | `+13039315098` | all pages |
 | Email | `malika@bossassociate.com` | all pages, contact form |
 | City | `Atlanta, Georgia` | footer, contact |
