@@ -1034,3 +1034,9 @@ main:focus { outline: none; }
   .training-stat { font-size: 0.95rem; }
   .training-stat strong { min-width: 4.25rem; font-size: 1.75rem; }
 }
+
+/* Legal footer links: additive only, original footer layout unchanged */
+.footer-legal-links { margin-top:10px; font-size:.85rem; color:#9DB0C9; }
+.footer-legal-links a { color:var(--gold-lite); text-decoration:underline; text-underline-offset:3px; }
+.footer-legal-links a:hover, .footer-legal-links a:focus-visible { color:#fff; }
+.footer-legal-links span { margin:0 9px; }
